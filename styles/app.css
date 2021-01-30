@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Raleway";
+  font-weight: 400;
+  src: url('../assets/fonts/Raleway-Regular.ttf');
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 500;
+  src: url('../assets/fonts/Raleway-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-weight: 700;
+  src: url('../assets/fonts/Raleway-Bold.ttf');
+}
+
+@font-face {
+  font-family: "Lora";
+  font-weight: 700;
+  src: url('../assets/fonts/Lora-Regular.ttf');
+}
+
 :root {
 
   --white: #fff;
@@ -17,6 +41,16 @@
   --outline-label: 1px solid var(--light-gray);
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 html,
 body {
   height: 100%;
@@ -25,7 +59,69 @@ body {
 
 body {
   align-items: center;
-  background-image: linear-gradient(to right top, #845ec2, #9c5dc0, #b15dbc, #c55cb7, #d65db1);
+  background-image:
+    linear-gradient(
+      to right top,
+      #845ec2,
+      #9c5dc0,
+      #b15dbc,
+      #c55cb7,
+      #d65db1
+    );
+  color: var(--dark);
   display: flex;
+  font: 16px/1.5 "Raleway", sans-serif;
   justify-content: center;
+}
+
+.todo {
+  background-color: var(--white);
+  padding: 30px 50px;
+  width: 500px;
+}
+
+/* ToDo Header */
+
+.todo-header {
+  border-bottom: 2px solid var(--light);
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+/* Welcome */
+
+.welcome-title {
+  color: var(--gray);
+  font-size: 2.3em;
+  line-height: 1.2;
+}
+
+.welcome-title-name {
+  color: var(--dark);
+  display: block;
+  font-size: 1.5em;
+}
+
+/* Date */
+
+.date {
+  align-items: center;
+  color: var(--gray);
+  display: flex;
+  font-family: "Lora", serif;
+  justify-content: space-between;
+}
+
+.date-day {
+  font-size: 3em;
+  line-height: 1;
+  margin-right: 5px;
+}
+
+.date-month-year {
+  margin-right: auto;
+}
+
+.date-week-day {
+  align-self: flex-end;
 }
