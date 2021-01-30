@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "css:lint": "stylelint '**/*.css'",
+    "css:fix": "stylelint '**/*.css' --fix",
+    "predev": "npm run css:fix",
     "dev": "snowpack dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "snowpack": "^3.0.11"
+    "snowpack": "^3.0.11",
+    "stylelint": "^13.9.0",
+    "stylelint-config-standard": "^20.0.0"
   }
 }

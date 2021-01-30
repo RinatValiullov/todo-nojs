@@ -16,5 +16,8 @@ body {
 }
 
 body {
+  align-items: center;
   background-image: linear-gradient(to right top, #845ec2, #9c5dc0, #b15dbc, #c55cb7, #d65db1);
+  display: flex;
+  justify-content: center;
 }
