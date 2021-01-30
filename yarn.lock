@@ -983,7 +983,7 @@
   dependencies:
     "p-locate" "^4.1.0"
 
-"lodash@^4.17.19", "lodash@^4.17.20":
+"lodash@^4.17.14", "lodash@^4.17.15", "lodash@^4.17.19", "lodash@^4.17.20":
   "integrity" "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.20.tgz"
   "version" "4.17.20"
@@ -1304,6 +1304,14 @@
     "uniq" "^1.0.1"
     "util-deprecate" "^1.0.2"
 
+"postcss-sorting@^5.0.1":
+  "integrity" "sha512-Y9fUFkIhfrm6i0Ta3n+89j56EFqaNRdUKqXyRp6kvTcSXnmgEjaVowCXH+JBe9+YKWqd4nc28r2sgwnzJalccA=="
+  "resolved" "https://registry.npmjs.org/postcss-sorting/-/postcss-sorting-5.0.1.tgz"
+  "version" "5.0.1"
+  dependencies:
+    "lodash" "^4.17.14"
+    "postcss" "^7.0.17"
+
 "postcss-syntax@^0.36.2", "postcss-syntax@>=0.36.0", "postcss-syntax@>=0.36.2":
   "integrity" "sha512-nBRg/i7E3SOHWxF3PpF5WnJM/jQ1YpY9000OaVXlAQj6Zp/kIqJxEDWIZ67tAd7NLuk7zqN4yqe9nc0oNAOs1w=="
   "resolved" "https://registry.npmjs.org/postcss-syntax/-/postcss-syntax-0.36.2.tgz"
@@ -1314,7 +1322,7 @@
   "resolved" "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz"
   "version" "4.1.0"
 
-"postcss@^7.0.14", "postcss@^7.0.2", "postcss@^7.0.21", "postcss@^7.0.26", "postcss@^7.0.32", "postcss@^7.0.35", "postcss@^7.0.6", "postcss@>=5.0.0", "postcss@>=7.0.0":
+"postcss@^7.0.14", "postcss@^7.0.17", "postcss@^7.0.2", "postcss@^7.0.21", "postcss@^7.0.26", "postcss@^7.0.31", "postcss@^7.0.32", "postcss@^7.0.35", "postcss@^7.0.6", "postcss@>=5.0.0", "postcss@>=7.0.0":
   "integrity" "sha512-3QT8bBJeX/S5zKTTjTCIjRF3If4avAT6kqxcASlTWEtAFCb9NH0OUxNDfgZSWdP5fJnBYCMEWkIFfWeugjzYMg=="
   "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.35.tgz"
   "version" "7.0.35"
@@ -1587,7 +1595,16 @@
   dependencies:
     "stylelint-config-recommended" "^3.0.0"
 
-"stylelint@^13.9.0", "stylelint@>=10.1.0":
+"stylelint-order@^4.1.0":
+  "integrity" "sha512-sVTikaDvMqg2aJjh4r48jsdfmqLT+nqB1MOsaBnvM3OwLx4S+WXcsxsgk5w18h/OZoxZCxuyXMh61iBHcj9Qiw=="
+  "resolved" "https://registry.npmjs.org/stylelint-order/-/stylelint-order-4.1.0.tgz"
+  "version" "4.1.0"
+  dependencies:
+    "lodash" "^4.17.15"
+    "postcss" "^7.0.31"
+    "postcss-sorting" "^5.0.1"
+
+"stylelint@^10.0.1 || ^11.0.0 || ^12.0.0 || ^13.0.0", "stylelint@^13.9.0", "stylelint@>=10.1.0":
   "integrity" "sha512-VVWH2oixOAxpWL1vH+V42ReCzBjW2AeqskSAbi8+3OjV1Xg3VZkmTcAqBZfRRvJeF4BvYuDLXebW3tIHxgZDEg=="
   "resolved" "https://registry.npmjs.org/stylelint/-/stylelint-13.9.0.tgz"
   "version" "13.9.0"

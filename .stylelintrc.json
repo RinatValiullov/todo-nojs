@@ -1,3 +1,18 @@
 {
-  "extends": "stylelint-config-standard"
+  "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-order"
+  ],
+  "rules": {
+    "custom-property-empty-line-before": "always",
+    "indentation": 2,
+    "order/order": [
+      "custom-properties",
+      "declarations"
+    ],
+    "order/properties-order": [
+      "height",
+      "width"
+    ]
+  }
 }

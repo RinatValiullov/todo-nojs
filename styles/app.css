@@ -1,11 +1,19 @@
 :root {
+
   --white: #fff;
+
   --gray: #a5a5a5;
+
   --light-gray: #eaeaeb;
+
   --light: #f8f8f8;
+
   --dark: #212529;
+
   --green: #28a745;
+
   --box-shadow-label: 0 1px 3px var(--light-gray), 0 1px 2px var(var(--light-gray));
+
   --outline-label: 1px solid var(--light-gray);
 }
 
