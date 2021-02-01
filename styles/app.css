@@ -125,3 +125,67 @@ body {
 .date-week-day {
   align-self: flex-end;
 }
+
+/* ToDo Item */
+
+.todo-item {
+  margin: 0 0 15px;
+}
+
+.todo-item-name {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0;
+  padding: 20px 10px;
+}
+
+.todo-item label {
+  display: block;
+}
+
+.todo-item input[type="checkbox"]:hover ~ label,
+.todo-item input[type="checkbox"]:focus ~ label {
+  box-shadow: var(--box-shadow-label);
+  outline: var(--outline-label);
+}
+
+.todo-item input[type="checkbox"]:checked ~ label {
+  opacity: 0.5;
+}
+
+.checked-vertical-line {
+  position: relative;
+}
+
+.todo-item input[type="checkbox"]:checked ~ label .checked-vertical-line::before {
+  animation: vertical-line 0.5s linear;
+  border-bottom: 1px solid var(--green);
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+/* Utilities */
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* Animation */
+
+@keyframes vertical-line {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "css:lint": "stylelint '**/*.css'",
-    "css:fix": "stylelint '**/*.css' --fix",
+    "css:lint": "stylelint **/*.css",
+    "css:fix": "stylelint **/*.css --fix",
     "predev": "npm run css:fix",
     "dev": "snowpack dev"
   },

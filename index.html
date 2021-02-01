@@ -1,36 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple ToDo list without JavaScript</title>
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple ToDo list without JavaScript</title>
-  <link rel="stylesheet" href="styles/app.css">
-</head>
+  <body>
+    <div class="todo">
+      <!-- Header -->
 
-<body>
-  <div class="todo">
-    <!-- Welcome -->
-    <div class="todo-header">
-      <h1 class="welcome-title">
-        Привет,
-        <span class="welcome-title-name">Ринат!</span>
-      </h1>
+      <div class="todo-header">
+        <h1 class="welcome-title">
+          Привет,
+          <span class="welcome-title-name">Ринат!</span>
+        </h1>
 
-      <!-- Date -->
-      <div class="date">
-        <div class="date-day">30</div>
-        <div class="date-month-year">
-          января
-          <br>
-          2021
+        <!-- Date -->
+        <div class="date">
+          <div class="date-day">30</div>
+          <div class="date-month-year">
+            января
+            <br />
+            2021
+          </div>
+          <div class="date-week-day">суббота</div>
         </div>
-        <div class="date-week-day">суббота</div>
       </div>
 
+      <!-- Body -->
+
+      <div class="todo-body">
+        <div class="todo-item">
+          <input
+            type="checkbox"
+            name="todo-item"
+            id="todo-item-1"
+            class="sr-only"
+          />
+          <label for="todo-item-1">
+            <h2 class="todo-item-name">
+              <span class="checked-vertical-line"
+                >Обновить упражнение по Grid</span
+              >
+            </h2>
+          </label>
+        </div>
+      </div>
     </div>
-
-  </div>
-</body>
-
+  </body>
 </html>
